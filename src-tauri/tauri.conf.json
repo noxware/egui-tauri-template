@@ -2,8 +2,9 @@
   "build": {
     "beforeBuildCommand": "trunk build",
     "beforeDevCommand": "trunk serve",
-    "devPath": "http://127.0.0.1:8080",
-    "distDir": "../dist"
+    "devPath": "http://127.0.0.1:2341",
+    "distDir": "../dist",
+    "withGlobalTauri": true
   },
   "package": {
     "productName": "egui-tauri-template",
