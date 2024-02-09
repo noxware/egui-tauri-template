@@ -26,6 +26,8 @@ env_logger = "0.10"
 # web:
 [target.'cfg(target_arch = "wasm32")'.dependencies]
 wasm-bindgen-futures = "0.4"
+wasm-bindgen = { version = "0.2.91", features = ["serde-serialize"] }
+serde-wasm-bindgen = "0.6.3"
 
 
 [profile.release]
@@ -45,3 +47,6 @@ opt-level = 2
 # If you fork https://github.com/emilk/egui you can test with:
 # egui = { path = "../egui/crates/egui" }
 # eframe = { path = "../egui/crates/eframe" }
+
+[workspace]
+members = ["src-tauri"]
