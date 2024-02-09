@@ -1,4 +1,0 @@
-
-# src-tauri/.cargo/config.toml
-[build]
-target = "x86_64-unknown-linux-gnu"
