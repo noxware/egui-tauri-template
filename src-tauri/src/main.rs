@@ -7,7 +7,7 @@ fn greet(name: &str) -> Result<String, String> {
         Err("You sent an empty name to greet. Now try sending something.".to_owned())
     } else {
         Ok(format!(
-            "Hello, {}! You've been greeted from Rust! Now try to send an empty name.",
+            "Hello, {}! You've been greeted from Tauri! Now try to send an empty name.",
             name
         ))
     }
