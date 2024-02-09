@@ -14,6 +14,10 @@ use some web API.
 For example, you can use this to embed multimedia content that the web naturally supports like videos.
 Or maybe you want to show an `iframe`.
 
+## Screenshot
+
+![Screenshot](https://github.com/noxware/egui-tauri-template/assets/7684329/5186f2a2-4a28-48b1-a531-1cd8ebdb640d)
+
 ## Usage
 
 Install Tauri CLI and run `cargo tauri dev` to run the app.
