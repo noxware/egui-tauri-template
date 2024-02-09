@@ -10,12 +10,12 @@ struct GreetArgs {
     name: String,
 }
 
-pub struct TemplateApp {
+pub struct App {
     greet_name: String,
     greet_output: Rc<RefCell<String>>,
 }
 
-impl Default for TemplateApp {
+impl Default for App {
     fn default() -> Self {
         Self {
             greet_name: "Kagome Higurashi".to_owned(),
@@ -24,13 +24,13 @@ impl Default for TemplateApp {
     }
 }
 
-impl TemplateApp {
+impl App {
     pub fn new(_cc: &eframe::CreationContext<'_>) -> Self {
         Default::default()
     }
 }
 
-impl eframe::App for TemplateApp {
+impl eframe::App for App {
     fn update(&mut self, ctx: &egui::Context, _frame: &mut eframe::Frame) {
         egui::CentralPanel::default().show(ctx, |ui| {
             ui.heading("Example");
