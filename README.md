@@ -2,7 +2,9 @@
 
 ## Description
 
-This is a template for creating an egui app that runs inside a tauri webview window.
+This is a template for creating an [egui](https://github.com/emilk/egui) app that runs inside a [tauri](https://github.com/tauri-apps/tauri) webview window.
+
+This is basically a modified version of [eframe_template](https://github.com/emilk/eframe_template) with tauri added.
 
 ## Why I would use egui inside a webview instead of a native window?
 
@@ -11,3 +13,7 @@ use some web API.
 
 For example, you can use this to embed multimedia content that the web naturally supports like videos.
 Or maybe you want to show an `iframe`.
+
+## Usage
+
+Install Tauri CLI and run `cargo tauri dev` to run the app.
