@@ -2,11 +2,6 @@
 #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
 
 #[tauri::command]
-fn secret() -> String {
-    "You are amazing!".into()
-}
-
-#[tauri::command]
 fn greet(name: &str) -> Result<String, String> {
     if name.is_empty() {
         Err("You sent an empty name to greet. Now try sending something.".to_owned())
@@ -20,7 +15,7 @@ fn greet(name: &str) -> Result<String, String> {
 
 fn main() {
     tauri::Builder::default()
-        .invoke_handler(tauri::generate_handler![greet, secret])
+        .invoke_handler(tauri::generate_handler![greet])
         .run(tauri::generate_context!())
         .expect("error while running tauri application");
 }
