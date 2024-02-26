@@ -1,4 +1,5 @@
-#![warn(clippy::all, rust_2018_idioms)]
+mod app;
+mod tauri;
 
 #[cfg(not(target_arch = "wasm32"))]
 fn main() {}
@@ -16,7 +17,7 @@ fn main() {
             .start(
                 "the_canvas_id", // hardcode it
                 web_options,
-                Box::new(|cc| Box::new(frontend::App::new(cc))),
+                Box::new(|cc| Box::new(app::App::new(cc))),
             )
             .await
             .expect("failed to start eframe");

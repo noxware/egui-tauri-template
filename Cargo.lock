@@ -1529,7 +1529,7 @@ dependencies = [
 
 [[package]]
 name = "frontend"
-version = "0.1.0"
+version = "0.0.0"
 dependencies = [
  "eframe",
  "egui",
@@ -2106,9 +2106,9 @@ checksum = "7f24254aa9a54b5c858eaee2f5bccdb46aaf0e486a595ed5fd8f86ba55232a70"
 
 [[package]]
 name = "hframe"
-version = "0.1.1"
+version = "0.3.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "699fe11bc79060d44981d4d28d963cd37fc33f99cfe664e1db53f7632708b4d0"
+checksum = "074467d83f1e62c9305f4ae2433a810cec56a0d8c7185eb374b52ed2b520b8ba"
 dependencies = [
  "egui",
  "urlencoding",

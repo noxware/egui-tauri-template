@@ -6,10 +6,6 @@ use serde_wasm_bindgen::to_value;
 
 use crate::tauri::invoke;
 
-const YT: &str = r#"
-<iframe width="1280" height="720" src="https://www.youtube.com/embed/PCp2iXA1uLE" title="FREDERIC 「oddloop」Music Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-"#;
-
 const COUNTER_TEMPLATE: &str = r#"
 <div style="display: flex; justify-content: center; align-items: center; padding: 8px; color: red; font: 36px sans-serif;">
     <span>{count}</span>
@@ -23,7 +19,6 @@ struct GreetArgs {
 
 pub struct App {
     count: i32,
-    is_yt_open: bool,
     greet_name: String,
     greet_output: Rc<RefCell<String>>,
 }
@@ -31,7 +26,6 @@ pub struct App {
 impl Default for App {
     fn default() -> Self {
         Self {
-            is_yt_open: true,
             count: 0,
             greet_name: "Kagome Higurashi".to_owned(),
             greet_output: Rc::new(RefCell::new("".to_owned())),
@@ -107,11 +101,6 @@ impl eframe::App for App {
 
         hframe::HtmlWindow::new("Web Counter")
             .content(&COUNTER_TEMPLATE.replace("{count}", &self.count.to_string()))
-            .show(ctx);
-
-        hframe::HtmlWindow::new("YT")
-            .content(YT)
-            .open(&mut self.is_yt_open)
             .show(ctx);
 
         hframe::sync(ctx);

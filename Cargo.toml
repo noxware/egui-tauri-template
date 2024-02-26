@@ -1,7 +1,6 @@
 [package]
 name = "frontend"
-version = "0.1.0"
-authors = ["you"]
+version = "0.0.0"
 edition = "2021"
 rust-version = "1.73"
 
@@ -19,7 +18,7 @@ serde = { version = "1", features = ["derive"] }
 wasm-bindgen-futures = "0.4"
 wasm-bindgen = { version = "0.2.91", features = ["serde-serialize"] }
 serde-wasm-bindgen = "0.6.3"
-hframe = "0.1.1"
+hframe = "0.3.0"
 
 
 [profile.release]
