@@ -4,7 +4,7 @@
 
 This is a template for creating an [egui](https://github.com/emilk/egui) app that runs inside a [tauri](https://github.com/tauri-apps/tauri) webview window.
 
-This is basically a modified version of [eframe_template](https://github.com/emilk/eframe_template) with tauri added.
+This is a reduced version of [eframe_template](https://github.com/emilk/eframe_template) with tauri and [hframe](https://github.com/noxware/hframe) added.
 
 ## Why I would use egui inside a webview instead of a native window?
 
@@ -14,10 +14,18 @@ use some web API.
 For example, you can use this to embed multimedia content that the web naturally supports like videos.
 Or maybe you want to show an `iframe`.
 
+This template comes with [hframe](https://github.com/noxware/hframe) to help you with that.
+
 ## Screenshot
 
-![Screenshot](https://github.com/noxware/egui-tauri-template/assets/7684329/5186f2a2-4a28-48b1-a531-1cd8ebdb640d)
+![Screenshot](https://github.com/noxware/egui-tauri-template/assets/7684329/9c31d085-fd78-4af8-a0fb-ab75243f55a5)
 
-## Usage
+## Usage as desktop app
 
-Install Tauri CLI and run `cargo tauri dev` to run the app.
+Install Tauri CLI and run `cargo tauri dev`.
+
+## Usage as web app
+
+Install Trunk and run `trunk serve`.
+
+> Note: When used as a web app, Tauri commands will not work.
