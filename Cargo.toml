@@ -6,8 +6,8 @@ rust-version = "1.73"
 
 
 [dependencies]
-egui = "0.25.0"
-eframe = { version = "0.25.0", default-features = false, features = [
+egui = "0.26.2"
+eframe = { version = "0.26.2", default-features = false, features = [
     "accesskit",     # Make egui comptaible with screen readers. NOTE: adds a lot of dependencies.
     "default_fonts", # Embed the default egui fonts.
     "glow",          # Use the glow rendering backend. Alternative: "wgpu".
@@ -18,7 +18,7 @@ serde = { version = "1", features = ["derive"] }
 wasm-bindgen-futures = "0.4"
 wasm-bindgen = { version = "0.2.91", features = ["serde-serialize"] }
 serde-wasm-bindgen = "0.6.3"
-hframe = "0.4.0"
+hframe = "0.4.1"
 
 
 [profile.release]
