@@ -18,7 +18,7 @@ serde = { version = "1", features = ["derive"] }
 wasm-bindgen-futures = "0.4"
 wasm-bindgen = { version = "0.2.91", features = ["serde-serialize"] }
 serde-wasm-bindgen = "0.6.3"
-hframe = "0.3.0"
+hframe = "0.4.0"
 
 
 [profile.release]

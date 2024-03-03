@@ -79,10 +79,6 @@ impl eframe::App for App {
 
         egui::Window::new("Devtools")
             .show(ctx, |ui| {
-                ui.label(format!(
-                    "Mask Strategy: {}",
-                    hframe::mask_strategy_meta(ctx).name
-                ));
                 ui.horizontal(|ui| {
                     ui.label("Counter controls: ");
                     if ui.button("+").clicked() {

@@ -2106,9 +2106,9 @@ checksum = "7f24254aa9a54b5c858eaee2f5bccdb46aaf0e486a595ed5fd8f86ba55232a70"
 
 [[package]]
 name = "hframe"
-version = "0.3.0"
+version = "0.4.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "074467d83f1e62c9305f4ae2433a810cec56a0d8c7185eb374b52ed2b520b8ba"
+checksum = "88426842a66c5ecc4a0f6745773e7e9cc19d183bad6645ed8e8b218beb61a8b9"
 dependencies = [
  "egui",
  "urlencoding",
